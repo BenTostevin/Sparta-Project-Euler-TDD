@@ -11,7 +11,7 @@ class Euler1
   end
 
   def divisible_by numerator, denominator
-    1
+    (numerator % denominator).zero?
   end
 
 # i = 0
