@@ -10,6 +10,10 @@ class Euler1
     i
   end
 
+  def divisible_by numerator, denominator
+    1
+  end
+
 # i = 0
 # sum = 0
 # loop do

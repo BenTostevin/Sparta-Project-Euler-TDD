@@ -10,10 +10,10 @@ describe 'euler1' do
     expect(@euler1.range_of_numbers(1,1000)).to be 1000
   end
 
-  # it 'should recognise if a number is divisable by 3' do
-  #
-  # end
-  #
+  it 'should recognise if a number is divisable by 3' do
+    expect(@euler1.divisible_by(6,3)).to be 1
+  end
+
   # it 'should recognise if a number is divisable by 3' do
   #
   # end
