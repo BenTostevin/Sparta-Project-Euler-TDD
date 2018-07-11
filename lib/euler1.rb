@@ -14,6 +14,10 @@ class Euler1
     (numerator % denominator).zero?
   end
 
+  def calc_sum cum_sum, add_to_sum
+    # cum_sum + add_to_sum
+    1
+  end
 # i = 0
 # sum = 0
 # loop do

@@ -18,12 +18,15 @@ describe 'euler1' do
     expect(@euler1.divisible_by(4000,3)).to be false
   end
 
-  # it 'should recognise if a number is divisable by 5' do
-  #
-  # end
-  #
-  # it 'should keep a cummulative total as it goes through the loop many times' do
-  #
-  # end
+  it 'should recognise if a number is divisable by 5' do
+    expect(@euler1.divisible_by(15,5)).to be true
+    expect(@euler1.divisible_by(16,5)).to be false
+    expect(@euler1.divisible_by(6000,5)).to be true
+    expect(@euler1.divisible_by(6004,5)).to be false
+  end
+
+  it 'should keep a cummulative total as it goes through the loop many times' do
+    expect(@euler1.calc_sum(1,1)).to be 1
+  end
 
 end
