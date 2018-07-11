@@ -1,6 +1,13 @@
 class Euler1
   def range_of_numbers num1, num2
-    1
+    i = 0
+    loop do
+      if i >= 1000
+        break
+      end
+      i += 1
+    end
+    i
   end
 
 # i = 0

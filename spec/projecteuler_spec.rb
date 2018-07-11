@@ -7,7 +7,7 @@ describe 'euler1' do
   end
 
   it 'should be able to access numbers 1 to 1000' do
-    expect(@euler1.range_of_numbers(1,1000)).to be 1
+    expect(@euler1.range_of_numbers(1,1000)).to be 1000
   end
 
   # it 'should recognise if a number is divisable by 3' do
