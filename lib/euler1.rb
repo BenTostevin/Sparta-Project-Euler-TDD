@@ -14,9 +14,26 @@ class Euler1
     (numerator % denominator).zero?
   end
 
-  def calc_sum cum_sum, add_to_sum
-    # cum_sum + add_to_sum
-    1
+  def calc_sum cumulative_sum, add_to_sum
+    cumulative_sum + add_to_sum
+  end
+
+  def calc_sum_to from, to
+    i = from
+    sum = 0
+
+    loop do
+      if i >= to
+        break
+      end
+
+      if divisible_by(i,3) || divisible_by(i,5)
+        sum = calc_sum(sum,i)
+      end
+
+      i += 1
+    end
+    sum
   end
 # i = 0
 # sum = 0

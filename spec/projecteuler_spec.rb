@@ -26,7 +26,10 @@ describe 'euler1' do
   end
 
   it 'should keep a cummulative total as it goes through the loop many times' do
-    expect(@euler1.calc_sum(1,1)).to be 1
+    expect(@euler1.calc_sum(1,1)).to be 2
+    expect(@euler1.calc_sum(40,50)).to be 90
+
+    expect(@euler1.calc_sum_to(1,10)).to be 23
   end
 
 end
